@@ -1,0 +1,4 @@
+Callbackfunctions:
+http://www.opensourceforu.com/2012/02/function-pointers-and-callbacks-in-c-an-odyssey/
+http://cc.byexamples.com/2007/10/11/simple-callback-function/
+http://www.codeguru.com/cpp/cpp/cpp_mfc/callbacks/article.php/c10557/Callback-Functions-Tutorial.htm
