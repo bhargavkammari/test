@@ -1,0 +1,7 @@
+Exception Handling:
+
+	-> It manage Runtime errors in an orderly fashion.
+	-> exception handling built upon three keywords : try  throw  catch
+	-> Function called from within a try block may also throw an exception .
+		Exception that can be thrown by the monitered code are caught by a catch statement.
+	-> 

@@ -1,0 +1,45 @@
+Operator Overloading
+
+	->It is type of polymorphism in which an operator is overloaded to give user defined meaning to it.
+	
+	->Overloaded operator is used to perform operation on user-defined data type.
+
+	->Almost any operator can be overloaded in c++.
+
+Operators That are not overloaded:
+
+	->scope operator ::
+	->sizeof 
+	->member selector .
+	->member pointer selector *
+	->ternary operator ?:
+
+Syntax:
+
+	returnType  classname ::Operator OperatorSymbol(argument list)
+	{
+		//Function Body
+	}
+
+
+
+Implementing Operator Overloading:
+
+	1.Member Function
+	2.Non-Member Function
+	3.Friend Function
+
+	->Operator Overloading function can be a member function if the Left operand is an Object of that class,
+but if the Left operand is different,then Operator overloading function must be a non-member function. 	
+
+	->Operator overloading function can be made friend function if it needs access to the private and protected members of class.
+
+
+Restriction on Operator Overloading:
+
+Following are some restrictions to be kept in mind while implementing operator overloading:
+	
+	1.Precedence and Associativity of an Operator cannot be changed
+	2.Arity(numbers of Operands) cannot be changed .Unary operator remains unary, Binary remains binary.
+	3.No new operator can be created,only existing operator can be overloaded.
+	4.Cannot redefine the meaning of a procedure. you cannot change how integers are added.

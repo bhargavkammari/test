@@ -1,0 +1,79 @@
+Casting:
+
+	Dynamic Casting:
+	->Dynamic_cast can be used only with pointers and references to objects.
+	->It is  always successful when we cast a class to one of it's base classes.
+	->	
+		class base{  };
+		class derived:public base{ };
+	
+		base b; base *pb
+		derived d; derived *pd;
+
+
+		pb= dynamic_cast<base*>(&d); // Ok,derived to base
+		
+		pd= dynamic_cast<derived*>(&b); //wrong,Base-to-derived
+
+
+	Static Casting:
+	->static_cast can perform conversion between pointer to related classes,
+		not only from the derived class to it's base but also from a base class to it's derived.
+
+	->
+		class base{  };
+		class derived:public base {  };
+	
+		base *a=new base;
+		derived *b= static_cast<derived*>(a);
+
+		-> This would be valid b would be point to an incomplete object of class and could lead to runtime errors if 				dereference.	
+		-> static_cast can perform any other non-pointer conversion that could also be performed implicitly
+
+
+			double d=3.1415;
+			int i=static_cast<int>(d);
+
+
+	-> 
+		class base{ };
+		class derived:public base{ };
+		class unrelatedclass { };
+
+		int main()
+		{
+			base b;
+			derived d;
+			
+			base *pb=static_cast<base*>(&d); //valid Up-Casting..
+			derived *pd=static_cast<derived*>(&b);//valid Down-Casting..
+
+		}
+
+
+	Reinterpret Casting:
+	->Reinterpret_cast converts any pointer type to any other pointer type, even of unrelated classes.
+
+
+	-> 
+		class A{ };
+		class B{ };
+		A *a=new A;
+		B *b=reinterpret_cast<B*>(a);	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

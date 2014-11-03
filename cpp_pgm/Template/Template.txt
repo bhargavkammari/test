@@ -1,0 +1,42 @@
+Template:
+
+	->It is possible to create generic functions and classes.
+	->In a generic function or class, the type of data upon which the function or class operates is specified as a parameter.
+	
+	->you can use one function or class with several different type of data without having to explicitly recode specific version for each data type.
+
+
+Generic function:
+	
+	-> a general set of operations that will be applied to various types of data.
+	-> when you create a generic function ,you are creating a function that can automatically overload it self.
+	-> generic function created using the keyword template
+	-> generic form of a template function definition:
+		
+		template<class type> ret_type fun_name(parameter list) 
+		{
+			//body of the function
+		}
+
+
+	-> generic function is also called a template function
+		(i.e function definition preceded by a template statement).
+	-> when compiler creates a specific version of this function it is said to have created a "specialization".this is also callled a generated function.
+	-> The act of generating a function is referred to as "instantiating" it.
+	-> a generated function is a specific instance of a template function. 
+	-> Overloading a function template.
+
+Generic Class:
+
+	-> template<class type> class  class_name
+		{
+		
+			//function body;
+		}
+
+	-> Once we have created a generic class,we create a specific instance of that class using the following general form :
+		class_name <type>obj;
+
+	->
+
+ 

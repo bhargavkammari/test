@@ -1,0 +1,62 @@
+Static Keyword
+
+Static elements are allocated storage only once in a program lifetime in static storage area. And they have a scope till the program lifetime.
+
+Static keyword can be used with following:
+1.static variable in functions
+2.Static Class Objects
+3.Static member variable in class
+4.Static Methods in class
+
+
+1.Static variable in functions
+	->static variables when used inside function are initilized only once, and then they hold there value even through function calls
+
+These static variables are stored on static storage area, not in stack.
+
+2.Static Class Objects
+	->Objects declared static are allocated storage in static storage area,scope till end of program.
+
+	->static objects are also initilized using constructors like other normal objects. Assignment to zero, on using static keyword is only for primitive datatypes, not for user defined datatypes.
+
+
+3.Static data member in class
+	->Static data members of class are those members whih are shared by all the objects. it has a single piece of storage, and is not available as separate copy with each object, like other non-static data members.
+
+	->Static member variables are not initilized using constructor ,bcz these are not dependent on object initialization.
+
+	->also ,it must initialized explicitly,always outside the class.If not initilized, Linker will give error
+
+	->once the definition for static data member is made,user cannot redefine it. Though, arithmetic operations can be performed on it.
+
+
+
+4.Static Member Function
+	
+	class X
+	{
+		public:
+		static coid f(){};
+	};
+
+	int main()
+	{
+		X::f(); //calling member function directly with class name
+	}
+
+
+
+
+	->These functions work for the class as whole rather than for a particular object of a class.
+
+	->it can called using an object and the direct member access .operator. But ,it's more typical to call a static member function  by itself, using class name and scope resolution :: operator.
+
+	->These functions cannot access ordinary data members & member fucntions , But only static data members
+and static member functions.
+
+	-> it doesn't have any "this" keyword which is the reason it cannot access ordinary members.
+
+
+
+
+

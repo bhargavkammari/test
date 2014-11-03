@@ -1,0 +1,78 @@
+Reference
+
+	->Reference are like constant pointers that are automatically dereferenced.
+
+	
+Reference vs Pointer:
+
+	Reference:	
+	->Reference must be initilized when it is created
+	->Once initilized ,we cannot reinitilize a reference.
+	->You can never have a NULL reference
+	->Reference is automatically dereferenced
+	->Reference doesnot need  new & delete
+
+
+	Pointer:
+	->Pointer can be initilized anytime
+	->Pointer can be reinitilized any number of time
+	->Pointer can be NULL
+	-> * is used to dereference a pointer.
+	->Pointer can allocate with new & delete
+
+
+cases: 
+	Is reference to a reference allowed?
+	Ans: No.
+	
+	Is pointer to a reference allowed?
+	Ans: No.
+
+	can we crate a reference to an array?
+	Ans: Yes
+		int a[]={3,7,6,9};
+		int (&p)[4]=a; // reference to an array
+
+	Is it is posible to create an array of references?
+	Ans: No. Reference is not an object,Hence we cannot find address of a reference.
+		Reference cannot be reinitilized.
+
+	
+
+some morepoints:
+
+	->int &p=100; not possible
+	->const int &p=100;possible
+
+Restriction to Reference:
+	->you cannot reference another reference
+	->you cannot obtain the address of Reference
+	->you cannot create array of references
+	->you cannot craete pointer to a reference
+	->you cannot reference a bit-field
+	->Null references are prohibited
+
+
+
+
+
+
+
+                                   
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

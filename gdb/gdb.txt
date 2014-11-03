@@ -1,0 +1,31 @@
+GDB
+
+	"web site: https://www.youtube.com/watch?v=Z6zMxp6r4mc"
+	-> gcc -g -Wall one.c -o one 
+ 		use -g for debugging the object file 
+	-> gdb one 
+		
+		-> inside gdb
+			-> list  it show the code
+			-> b main it break the main or b 6(line number) it keep the break point in line 6
+ 			-> r means execute the progarm
+			-> print var to show the value of the value
+			-> n is go to the next line 	
+			-> display var is to display variable values
+			-> c continue the progaram
+			-> info b means show existing breakpoints
+			-> b no if(cond) or b 8 if(a<50) 
+				set a break point at a line and the program
+				stops only when the condition is True.
+			-> disable no or disable 8  disable a break point.
+			-> bt is for back track.
+			-> f  1 is goto the function code or f 2 is second function
+			-> s step (enter a function) 
+			
+
+GDB core dump analysis for beginners
+
+			-> gdb infinite coredump_file 
+	
+		
+			

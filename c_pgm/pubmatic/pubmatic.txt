@@ -1,0 +1,21 @@
+a. All problems to be solved in C. b. Please provide separate .c files for each problem.
+	 1. Given 2 arrays A and B, find three indices i,j and k such that A[i] + A[j] = B[k] 
+	(Sum of two elements in the first array is an element in the second array) All inputs to be accepted as command line parameters.
+
+ 	./twoArray n m a1 a2 a3 .... an b1 b2 b3 .... bm Sample if the arrays are A[7] = {1 2 3 4 5 6 7} B[6] = {11 12 34 56 67 89} 
+
+
+
+	the program shall be called as 
+	./twoArray 7 6 1 2 3 4 5 6 7 11 12 34 56 67 89 
+
+
+2. You are given n sheets of paper. 
+	A sheet of paper "A" can be stacked on top of another "B" if length(A) < length(B) and width(A) < width(B). 
+	Calculate the height of tallest stack that could be formed out of the given sheets by stacking them on top of each other.
+	All inputs to be accepted as command line parameters.
+
+	./paperStack n l1 w1 l2 w2 l3 w3 ..... ln wn 
+
+Ex: For 4 sheets of paper with dimensions as p1(10,20) p2(13,15) p3(2,45) and p4(56,9) the program shall be called as 
+./paperStack 4 10 20 13 15 2 45 56 9 
